@@ -21,8 +21,7 @@ const valor2 = ref("");
     <label>Quantas pessoas estão pagando a conta?</label>
     <input type="number" v-model="valor1" />
     <h4>
-      Valor da conta: R${{ (preco * (1 + gorjeta / 100)) / pessoas }} para cada
-      pessoa
+      Valor para cada um pagar: {{ (valor1 * (1 + gorgeta / 100)) / valor2 }}
     </h4>
   </main>
 </template>
