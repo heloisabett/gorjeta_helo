@@ -15,13 +15,13 @@ const valor2 = ref("");
       <option value="10">10% (Ruim)</option>
       <option value="15">15% (Ok)</option>
       <option value="20">20% (Bom)</option>
-      <option value="25">25% (Mais que Bom)</option>
+      <option value="25">25% (muito Bom)</option>
       <option value="30">30% (Perfeito)</option>
     </select>
     <label>Quantas pessoas estão pagando a conta?</label>
     <input type="number" v-model="valor1" />
     <h4>
-      Valor da conta: R${{ (valor2 +(valor2 * (gorjeta / 100))) / valor1 }} para cada pessoa
+      Valor da conta: R${{ (valor2 + (valor2 * (gorjeta / 100))) / valor1 }} para cada pessoa
     </h4>
   </main>
 </template>
